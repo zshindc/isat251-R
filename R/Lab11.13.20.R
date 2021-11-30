@@ -1,0 +1,20 @@
+myfile <- file.choose()
+mms.bags <- read.csv(myfile,header=TRUE)
+summary(mms.bags)
+## sample size as the row number in the dimension
+n <- dim(mms.bags)[1]
+mean(mms.bags)
+mean(mms.bags$weight)
+sd(mms.bags$weight)
+length(mms.bags$weight)
+hist(mms.bags$weight,xlab="M&Ms Weight (g)",main="Distribution of M&Ms Weight")
+2*pt(q=7.527458,df=63)
+pt(q=7.527458,df=63)
+pt
+p.value = 2*pt(q=7.527458,df=63)
+qt(0.995,df=63)
+t.test(mms.bags$weight,alternative=c("two.sided", "less", "greater"),mu=.01963,conf.level = 0.995)
+2*pt(q=.0972368,df=63)
+qt(0.995,df=63)
+t.test(mms.bags$weight,alternative=c("two.sided", "less", "greater"),mu=49.4,conf.level = 0.995)
+t.test(mms.bags$weight,alternative=c("two.sided", "less", "greater"),mu=47.9,conf.level = 0.995)
